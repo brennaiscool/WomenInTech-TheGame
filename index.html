@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Google font style-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+  <!--Bootstrap stuff-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Javascript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Women in Tech</title>
+</head>
+<body>
+  <!--Title of our website-->
+  <h1><center>Women In Tech: A <strike>Game</strike> Reality </center></h1>
+<small><small><center><h1>Pick a company to work at: </h1></center></small></small>
+<!--Three company branches-->
+<!--After clicking one of the buttons all of the other buttons are disabled-->
+<div class="container">
+  <button class = "w3-button w3-xlarge w3-round w3-teal" onclick="document.getElementById('AppleImage').style.display = 'block'; clickBtn(); Apple(); undisableBtn(); showGo();">Apple</button>
+
+  <button class="w3-button w3-xlarge w3-round w3-teal" onclick="document.getElementById('GoogleImage').style.display = 'block'; clickBtn(); Google(); undisableBtn(); showGo();">Google</button>
+
+  <button class = "w3-button w3-xlarge w3-round w3-teal"
+  onclick="document.getElementById('TwitterImage').style.display = 'block'; clickBtn(); Twitter(); undisableBtn(); showGo();">Twitter</button>
+
+
+</div>
+<!--The right side-->
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-6">
+      <!-- <h3>Narration</h3> -->
+        <p id="googleOp" class="computer_type"></p>
+        <p id="AppleOp" class="computer_type"></p>
+        <p id="TwitterOp" class="computer_type"></p>
+        <p id="appleStart" class="computer_type"></p>
+        <p id="meanBoss" class="computer_type"></p>
+        <p id="quiet class="computer_type"p>
+        <p id="quit" class="computer_type"></p>
+        <p id="beyonce" class="computer_type"></p>
+        <p id="situation_100" class="computer_type"></p>
+        <p id="situation_200" class="computer_type"></p>
+        <p id="situation_300" class="computer_type"></p>
+
+          <button class ="hideEvery" id="go" onclick= "nextStory(); showBoss(); showQuiet();">Go On...</button>
+
+          <button class="hideEvery" id="boss" onclick="document.getElementById('BossImage').style.display = 'block'; talktoboss(); showEpiphany();">Talk to Boss</button>
+
+          <button class="hideEvery" id="stayquiet" onclick="document.getElementById('Guy1Image').style.display = 'block'; stayquiet();">Stay Quiet</button>
+
+          <button class="hideEvery" id="quitthis" onclick="document.getElementById('GuyImage').style.display = 'block'; quitThis(); hideBoss(); hideQuiet(); showB();">Epiphany</button>
+
+          <button class="hideEvery" id="wrw" onclick="document.getElementById('Beyonce').style.display = 'block'; whoruntheworld(); hideEpiphany();">Who Runs The World?</button>
+
+    </div>
+
+    <div class="col-sm-6">
+      <!-- <h3>Picture</h3> -->
+
+        <div class="container">
+          <!--Making images move to the left-->
+          <img id="GoogleImage" class="company-image" src="Google.jpg">
+          <img id="AppleImage" class="company-image" src="Apple.jpg">
+          <img id="TwitterImage" class="company-image" src="Twitter.jpg">
+          <img id="BossImage" class="company-image" src="boss.jpg">
+          <img id="Guy1Image" class="company-image" src="guy1.jpg">
+          <img id="GuyImage" class="company-image" src="guy.jpg">
+          <img id="Beyonce" class="company-image" src="beyonce.jpg">
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="btndisabled.js"></script>
+</body>
+</html

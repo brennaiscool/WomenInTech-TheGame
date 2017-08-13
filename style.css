@@ -1,0 +1,59 @@
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 500%;
+  color: white;
+}
+
+
+
+button{
+  font-family: 'Poiret One', cursive;
+  flex-flow: column;
+  padding: 15px 32px;
+  margin: 15px 30px;
+  cursor: pointer;
+  align-self: center;
+}
+
+#show {
+  visibility: visible;
+}
+
+#show1 {
+  visibility: visible;
+}
+
+body {
+  display: flex;
+  background-color: #56b3a3;
+  flex-direction: column;
+}
+
+.computer_type {
+  font-family: "Cutive Mono";
+  font-size: 130%
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.company-image{
+  display: none;
+  width: 500px;
+  align-self: center;
+
+}
+
+.invisible {
+  display: none;
+}
+
+.hideEvery {
+  display: none;
+}
+
+.showButton {
+  display: block;
+}
